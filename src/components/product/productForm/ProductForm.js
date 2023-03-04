@@ -20,7 +20,7 @@ const ProductForm = ({
       <Card cardClass={"card"}>
         <form onSubmit={saveProduct}>
           <Card cardClass={"group"}>
-            <label>Product Image</label>
+            <label>Book Image</label>
             <code className="--color-dark">
               Supported Formats: jpg, jpeg, png
             </code>
@@ -32,21 +32,21 @@ const ProductForm = ({
 
             {imagePreview != null ? (
               <div className="image-preview">
-                <img src={imagePreview} alt="product" />
+                <img src={imagePreview} alt="Book" />
               </div>
             ) : (
-              <p>No image set for this poduct.</p>
+              <p>No image set for this book.</p>
             )}
           </Card>
-          <label>Product Name:</label>
+          <label>Book Name:</label>
           <input
             type="text"
-            placeholder="Product name"
+            placeholder="name"
             name="name"
             value={product?.name}
             onChange={handleInputChange}
           />
-          <label>Product Category:</label>
+          <label>Book Category:</label>
           <select onChange={(e)=>setSelectedCat(e.target.value)}>
             {categorys.map((elem,index)=>{
                 return <option key={index} value={index}>{elem.name}</option>
@@ -54,26 +54,26 @@ const ProductForm = ({
             }
           </select><br/>
 
-          <label>Product Auteur:</label>
+          <label>Auteur:</label>
           <input
             type="text"
-            placeholder="Product Auteur"
+            placeholder="Auteur"
             name="auteur"
             value={product?.auteur}
             onChange={handleInputChange}
           />
 
-            <label>Product Editeur:</label>
+            <label>Editeur:</label>
             <input
               type="text"
-              placeholder="Product Editeur"
+              placeholder="Editeur"
               name="editeur"
               value={product?.editeur}
               onChange={handleInputChange}
             />
           <div className="--my">
             <button type="submit" className="--btn --btn-primary">
-              Save Product
+              Save Book
             </button>
           </div>
         </form>

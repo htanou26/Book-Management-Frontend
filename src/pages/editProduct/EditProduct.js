@@ -88,7 +88,7 @@ console.log(product);
   return (
     <div>
       {isLoading && <Loader />}
-      <h3 className="--mt">Edit Product</h3>
+      <h3 className="--mt">Edit Book</h3>
       <ProductForm
         product={product}
         productImage={productImage}

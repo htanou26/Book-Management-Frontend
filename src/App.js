@@ -71,7 +71,7 @@ function App() {
           }
         />
         <Route
-          path="/add-product"
+          path="/add-book"
           element={
             <Sidebar>
               <Layout>
@@ -81,7 +81,7 @@ function App() {
           }
         />
         <Route
-          path="/product-detail/:id"
+          path="/book-detail/:id"
           element={
             <Sidebar>
               <Layout>
@@ -91,7 +91,7 @@ function App() {
           }
         />
         <Route
-          path="/edit-product/:id"
+          path="/edit-book/:id"
           element={
             <Sidebar>
               <Layout>

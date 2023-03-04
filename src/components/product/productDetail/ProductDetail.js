@@ -31,7 +31,7 @@ const ProductDetail = () => {
 
   return (
     <div className="product-detail">
-      <h3 className="--mt">Product Detail</h3>
+      <h3 className="--mt">Book Detail</h3>
       <Card cardClass="card">
         {isLoading && <SpinnerImg />}
         {product && (
@@ -43,7 +43,7 @@ const ProductDetail = () => {
                   alt={product.image.fileName}
                 />
               ) : (
-                <p>No image set for this product</p>
+                <p>No image set for this book</p>
               )}
             </Card>
             <hr />

@@ -36,7 +36,7 @@ const CategorySummary = ({ products }) => {
       <div className="info-summary">
         <InfoBox
           icon={productIcon}
-          title={"Total Products"}
+          title={"Total Books"}
           count={products.length}
           bgColor="card1"
         />

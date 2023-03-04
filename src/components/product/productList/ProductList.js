@@ -39,8 +39,8 @@ const ProductList = ({ products, isLoading }) => {
 
   const confirmDelete = (id) => {
     confirmAlert({
-      title: "Delete Product",
-      message: "Are you sure you want to delete this product.",
+      title: "Delete Book",
+      message: "Are you sure you want to delete this Book.",
       buttons: [
         {
           label: "Delete",
@@ -97,7 +97,7 @@ const ProductList = ({ products, isLoading }) => {
 
         <div className="table">
           {!isLoading && products.length === 0 ? (
-            <p>-- No product found, please add a product...</p>
+            <p>-- No book found, please add a book...</p>
           ) : (
             <table>
               <thead>
@@ -128,12 +128,12 @@ const ProductList = ({ products, isLoading }) => {
                       <td>{editeur}</td>
                       <td className="icons">
                         <span>
-                          <Link to={`/product-detail/${_id}`}>
+                          <Link to={`/book-detail/${_id}`}>
                             <AiOutlineEye size={25} color={"purple"} />
                           </Link>
                         </span>
                         <span>
-                          <Link to={`/edit-product/${_id}`}>
+                          <Link to={`/edit-book/${_id}`}>
                             <FaEdit size={20} color={"green"} />
                           </Link>
                         </span>

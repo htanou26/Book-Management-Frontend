@@ -38,9 +38,9 @@ const Home = () => {
       {/* HERO SECTION */}
       <section className="container hero">
         <div className="hero-text">
-          <h2>Inventory {"&"} Stock Management Solution</h2>
+          <h2>Inventory {"&"} Books Management Solution</h2>
           <p>
-            Inventory system to control and manage proucts in the warehouse in
+            Inventory system to control and manage books in the warehouse in
             real timeand integrated to make it easier to develop your business.
           </p>
           <div className="hero-buttons">

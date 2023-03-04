@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import Card from "../../components/card/Card";
 import { SpinnerImg } from "../../components/loader/Loader";
 import useRedirectLoggedOutUser from "../../customHook/useRedirectLoggedOutUser";
-import { SET_NAME, SET_USER } from "../../redux/features/auth/authSlice";
+import { SET_NAME ,SET_USER } from "../../redux/features/auth/authSlice";
 import { getUser } from "../../services/authService";
 import "./Profile.scss";
 
@@ -46,7 +46,7 @@ const Profile = () => {
                 <b>Name : </b> {profile?.name}
               </p>
               <p>
-                <b>First Name : </b> {profile?.name}
+                <b>First Name : </b> {profile?.firstName}
               </p>
               <p>
                 <b>Email : </b> {profile?.email}

@@ -23,7 +23,7 @@ const authSlice = createSlice({
     SET_NAME(state, action) {
       localStorage.setItem("name", JSON.stringify(action.payload));
       state.name = action.payload;
-    },
+    },   
     SET_USER(state, action) {
       const profile = action.payload;
       state.user.name = profile.name;
